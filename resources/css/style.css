@@ -162,6 +162,14 @@ header {
 }
 
 /*---------------------------------------------*/
+/* FEATURES */
+/*---------------------------------------------*/
+
+.section-features .long-copy {
+  margin-bottom: 30px;
+}
+
+/*---------------------------------------------*/
 /* LOGO */
 /*---------------------------------------------*/
 
@@ -205,7 +213,7 @@ header {
 }
 
 /*---------------------------------------------*/
-/* NAVBAR */
+/* MEALS */
 /*---------------------------------------------*/
 
 .meals-showcase {
@@ -222,9 +230,23 @@ header {
 .meal-photo {
   margin: 0;
   width: 100%;
+  overflow: hidden;
+  background-color: #000;
 }
 
 .meal-photo img {
   width: 100%;
   height: auto;
+  transform: scale(1.15);
+  opacity: .8;
+}
+
+.meal-photo img:hover {
+  transform: scale(1.03);
+  opacity: 1;
+  transition: transform .5s, opacity .5s;
+}
+
+.section-meals {
+  padding: 0;
 }

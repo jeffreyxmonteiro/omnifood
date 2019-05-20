@@ -65,6 +65,12 @@ $(document).ready(function() {
         offset: '50%'
     });
 
+      $('.js--wp-5').waypoint(function(direction) {
+        $('.js--wp-5').addClass('animated fadeInRight');
+    }, {
+        offset: '50%'
+    });
+
 
     /* Mobile navigation */
     $('.js--nav-icon').click(function() {

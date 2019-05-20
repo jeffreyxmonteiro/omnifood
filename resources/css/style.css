@@ -137,6 +137,7 @@ input[type=submit] {
 input[type=submit]:hover,
 input[type=submit]:active {
   background-color: #cf6d17;
+  -webkit-transition: background-color 0.3s;
   transition: background-color .3s;
 }
 
@@ -145,6 +146,7 @@ input[type=submit]:active {
 input[type=submit]:hover,
 input[type=submit]:active {
   border: 1px solid #cf6d17;
+  -webkit-transition: border .3s;
   transition: border .3s;
 }
 
@@ -152,6 +154,7 @@ input[type=submit]:active {
 .btn-ghost:active {
   border: 1px solid #cf6d17;
   color: #fff;
+  -webkit-transition: border .3s;
   transition: border .3s;
 }
 
@@ -173,7 +176,9 @@ header {
   width: 1140px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 
 }
 
@@ -225,6 +230,7 @@ header {
 .main-nav li a:active
  {
   border-bottom: 2px solid #e67e22;
+  -webkit-transition: border-bottom 0.5s;
   transition: border-bottom .5s;
 }
 
@@ -253,13 +259,18 @@ header {
 .meal-photo img {
   width: 100%;
   height: auto;
+  -webkit-transform: scale(1.15);
+  -ms-transform: scale(1.15);
   transform: scale(1.15);
   opacity: .8;
 }
 
 .meal-photo img:hover {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
   transform: scale(1.03);
   opacity: 1;
+  -webkit-transition: -webkit-transform .5s, opacity .5s;
   transition: transform .5s, opacity .5s;
 }
 
@@ -352,6 +363,7 @@ header {
   color: #e67e22;
   border-bottom: 1px solid #e67e22;
   padding-bottom: 2px;
+  -webkit-transition: border-bottom .5s, color .5s;
   transition: border-bottom .5s, color .5s;
 }
 .city-feature a:hover,
@@ -535,6 +547,7 @@ footer a:link,
 footer a:visited {
   color: #888;
   text-decoration: none;
+  -webkit-transition: color .5s;
   transition: color .5s;
 }
 footer a:hover,
@@ -553,6 +566,7 @@ ion-icon[name=logo-facebook],
 ion-icon[name=logo-twitter],
 ion-icon[name=logo-googleplus],
 ion-icon[name=logo-instagram] {
+  -webkit-transition: color .5s;
   transition: color .5s;
 }
 

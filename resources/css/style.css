@@ -201,10 +201,19 @@ header {
   margin-top: 20px;
 }
 
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+}
+
 /*---------------------------------------------*/
 /* NAVBAR */
 /*---------------------------------------------*/
 
+/* Main nav */
 .main-nav {
   float: right;
   list-style: none;
@@ -218,7 +227,7 @@ header {
 
 .main-nav li a:link,
 .main-nav li a:visited {
-  padding-bottom: 8px;
+  padding: 8px 0;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -233,6 +242,28 @@ header {
   -webkit-transition: border-bottom 0.5s;
   transition: border-bottom .5s;
 }
+
+/* Sticky nav */
+
+.main-nav { margin-top: 18px; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .98);
+  box-shadow: 0 2px 2px #efefef;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 17px 0;
+  color: #555;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
 
 /*---------------------------------------------*/
 /* MEALS */

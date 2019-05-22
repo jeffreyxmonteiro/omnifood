@@ -25,7 +25,7 @@
   .steps-box:last-child { margin-top: 10px; }
   .works-step { margin-bottom: 40px; }
   .works-step:last-of-type { margin-bottom: 60px; }
-}
+
 
   .app-screen { width: 50%; }
 
@@ -43,6 +43,11 @@
   .plan-price { font-size: 250%; }
 
   .contact-form { width: 80%; }
+
+  header { background-attachment: scroll; }
+  .section-testimonials { background-attachment: scroll }
+
+}
 
 /*small phones to small tablets from 481 to 767 pexels e.g. (less than ipad) */
 @media only screen and (max-width: 767px) {
@@ -108,6 +113,7 @@
   header {
     background-attachment: scroll;
   }
+  .section-testimonials { background-attachment: scroll }
 
 }
 
@@ -115,7 +121,6 @@
 @media only screen and (max-width: 480px) {
   section { padding: 25px 0; }
   .contact-form { width: 100%; }
-  header {
-    background-attachment: scroll;
-  }
+  header { background-attachment: scroll; }
+  .section-testimonials { background-attachment: scroll }
 }
